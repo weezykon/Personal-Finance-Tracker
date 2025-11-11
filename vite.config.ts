@@ -9,5 +9,9 @@ export default defineConfig({
   css: {
     postcss,
   },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/setupTests.ts'],
+  },
 })
 
